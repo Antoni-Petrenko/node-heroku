@@ -25,6 +25,8 @@ app.post("/",(req,res,next)=>{
     console.log( JSON.parse(req.body))
     res.end()
 })
-
-app.listen(80);
+const port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});
 
