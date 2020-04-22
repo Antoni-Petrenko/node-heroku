@@ -16,7 +16,9 @@ const numbers=[
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
+app.get("/",(req,res,next)=>{
+    res.send("<h1>Hello</h1>")
+})
 
 
 app.post("/",(req,res,next)=>{   
